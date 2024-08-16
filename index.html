@@ -1,141 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Pitch - AI Investor Pitching Solution</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Clone Pitch - AI-Driven Investor Pitches</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            background-image: url('your-hero-image.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .cta {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .value-prop {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .value-prop h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .value-prop p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+        .benefits div {
+            max-width: 300px;
+            text-align: center;
+        }
+        .benefits div h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .benefits div p {
+            font-size: 16px;
+        }
+        .social-proof {
+            background-color: #e8e8e8;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .social-proof h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .social-proof p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .lead-form {
+            background-color: #ff6f61;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .lead-form h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .lead-form form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .lead-form input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .lead-form button {
+            background-color: white;
+            color: #ff6f61;
+            padding: 15px 30px;
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .trust-indicators {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
             background-color: #f4f4f4;
         }
-
-        header {
-            padding: 100px 0;
-            background-color: #007BFF;
-            color: #fff;
-            text-align: center;
+        .trust-indicators img {
+            max-width: 100px;
         }
-
-        .cta-button {
-            margin-top: 20px;
-            background-color: #28a745;
-            border-color: #28a745;
-            font-size: 1.2em;
-        }
-
-        .content {
-            margin: 40px 0;
-        }
-
-        .content h2 {
-            color: #333;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 1.1em;
-            line-height: 1.6em;
-            color: #555;
-        }
-
-        .testimonial {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 40px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial p {
-            font-style: italic;
-            color: #777;
-        }
-
-        .testimonial h3 {
-            color: #007BFF;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .lead-capture {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 40px 20px;
-            border-radius: 5px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .lead-capture h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
         footer {
             background-color: #333;
-            color: #fff;
-            padding: 20px 0;
+            color: white;
             text-align: center;
-            font-size: 0.9em;
+            padding: 20px;
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <h1>Effortlessly Pitch to Investors with Clone Pitch</h1>
-            <p class="lead">Say goodbye to time-consuming investor presentations. Our AI clone pitches on your behalf, so you can focus on leading your company.</p>
-            <a href="#lead-capture" class="btn btn-success cta-button">Get Started with Clone Pitch Today</a>
-        </div>
-    </header>
-
     <div class="container">
-        <div class="content text-center">
-            <h2>No More Investor Pitching Hassles – Just 1 Minute of Your Voice, and We Do the Rest</h2>
-            <p>
-                As a startup founder or CEO of a listed company, your time is valuable. Investor relations pitches are critical but can consume hours of your time. Clone Pitch eliminates that burden by using AI to create and deliver investor presentations for you. Simply provide a 1-minute voice recording, and our AI clone will handle the rest, from slide conversion to video creation and multilingual translation. Focus on what you do best, and leave the pitches to us.
-            </p>
-        </div>
+        <section class="hero">
+            <h1>Revolutionize Your Investor Pitches with AI-Driven Clone Technology</h1>
+            <p>Let an AI Clone Pitch on Your Behalf—Effortlessly Engage Investors Anytime, Anywhere.</p>
+            <a href="#" class="cta">Start Your Free Trial</a>
+        </section>
 
-        <div class="testimonial">
-            <p>"Clone Pitch helped us secure our Series B funding without spending hours preparing presentations. It's a game-changer!"</p>
-            <h3>— Jane Doe, CEO of Tech Innovators Inc.</h3>
-        </div>
+        <section class="value-prop">
+            <h2>Clone Pitch: Your AI-Driven Presentation Partner</h2>
+            <p>Clone Pitch is the ultimate AI-driven tool that transforms your investor presentations. No more time-consuming preparations or language barriers—simply provide a minute of your voice, and our AI will handle the rest.</p>
+        </section>
 
-        <div class="lead-capture" id="lead-capture">
-            <h2>Sign Up for a Free Demo</h2>
-            <form action="#" method="POST" class="form-inline justify-content-center">
-                <div class="form-group mx-2">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group mx-2">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group mx-2">
-                    <input type="text" class="form-control" name="company" placeholder="Your Company" required>
-                </div>
-                <button type="submit" class="btn btn-success cta-button">Sign Up</button>
+        <section class="benefits">
+            <div>
+                <h3>Save Time</h3>
+                <p>Let our AI clone handle investor pitches, freeing you up for more strategic tasks.</p>
+            </div>
+            <div>
+                <h3>Seamless Conversion</h3>
+                <p>Transform your existing slides into polished, multilingual videos with ease.</p>
+            </div>
+            <div>
+                <h3>Global Reach</h3>
+                <p>Ensure your message is clear and compelling, no matter the language.</p>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <h2>What Our Customers Say</h2>
+            <p>“Clone Pitch drastically reduced my preparation time, allowing me to focus on scaling my startup. The AI’s accuracy is astounding!” — Jane Doe, Founder of XYZ Startups</p>
+            <p>“Using Clone Pitch, we were able to secure our funding round with minimal effort. The AI presentation was flawless.” — John Smith, CEO of ABC Corp.</p>
+        </section>
+
+        <section class="lead-form">
+            <h2>Join Our Early Adopters</h2>
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="company" placeholder="Your Company Name" required>
+                <button type="submit">Request a Demo</button>
             </form>
-        </div>
+        </section>
+
+        <section class="trust-indicators">
+            <img src="security-badge.png" alt="Security Badge">
+            <img src="gdpr-compliance.png" alt="GDPR Compliance">
+            <img src="trusted-by.png" alt="Trusted By">
+        </section>
     </div>
 
     <footer>
-        <div class="container">
-            <p>Trusted by Industry Leaders, Secured with Advanced AI Technology</p>
-            <p>&copy; 2024 Clone Pitch. All Rights Reserved. | <a href="#" style="color: #f8f9fa;">Privacy Policy</a></p>
-        </div>
+        <p>&copy; 2024 Clone Pitch. All rights reserved.</p>
     </footer>
-
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
