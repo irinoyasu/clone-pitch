@@ -4,55 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Pitch</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url('images/hero-image-800x600.png');
+            background-repeat: no-repeat;
+            background-size: contain; /* Ensure the full image is visible */
+            background-position: center;
+            width: 100%;
+            max-width: 800px; /* Set max width to image width */
+            height: 600px; /* Set height to image height */
+            margin: 0 auto; /* Center the image horizontally */
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-    <div class="max-w-7xl mx-auto p-4">
-        <section class="relative text-center bg-cover bg-center text-white py-48 flex flex-col items-center justify-center" style="background-image: url('images/header_image_800x300.jpg');">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h1 class="relative text-4xl md:text-5xl lg:text-6xl font-bold whitespace-nowrap z-10">クローンがプレゼン代行</h1>
-            <a href="#lead-form" class="relative z-10 bg-red-500 text-white px-6 py-3 mt-6 text-lg md:text-xl rounded hover:bg-red-600">無料トライアル申し込み</a>
+<body class="bg-light text-dark">
+    <section class="hero-section d-flex flex-column align-items-center justify-content-center text-white text-center">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-4 fw-bold">クローンがプレゼン代行</h1>
+            <a href="#lead-form" class="btn btn-danger btn-lg mt-4">無料トライアル申し込み</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="text-center py-5">
+            <h2 class="display-5 fw-semibold mb-4">Clone Pitch</h2>
+            <p class="lead mx-auto mb-5" style="max-width: 600px;">プレゼンスライドを、クローンボイスで、プレゼン動画に。</p>
         </section>
 
-        <section class="text-center py-12">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Clone Pitch</h2>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">プレゼンスライドを、あなたのクローンボイスで、プレゼン動画に。</p>
-        </section>
-
-        <section class="flex flex-col md:flex-row md:justify-around py-12 gap-8">
-            <div class="text-center max-w-xs mx-auto">
-                <h3 class="text-2xl font-semibold mb-4">緊張しない</h3>
-                <p class="text-base">クローンがプレゼンを代行</p>
+        <section class="row text-center py-5">
+            <div class="col-md-4 mb-4">
+                <h3 class="h4 fw-bold mb-3">緊張しない</h3>
+                <p>クローンがプレゼンを代行</p>
             </div>
-            <div class="text-center max-w-xs mx-auto">
-                <h3 class="text-2xl font-semibold mb-4">英語もペラペラ</h3>
-                <p class="text-base">噛まずに、時間通りに。</p>
+            <div class="col-md-4 mb-4">
+                <h3 class="h4 fw-bold mb-3">英語もペラペラ</h3>
+                <p>噛まずに、時間内に。</p>
             </div>
-            <div class="text-center max-w-xs mx-auto">
-                <h3 class="text-2xl font-semibold mb-4">スライドをアップするだけ</h3>
-                <p class="text-base">あとは全てお任せ。</p>
+            <div class="col-md-4 mb-4">
+                <h3 class="h4 fw-bold mb-3">スライドをアップするだけ</h3>
+                <p>あとは全てお任せ。</p>
             </div>
         </section>
 
-        <section class="bg-gray-200 py-12 text-center">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6">ユーザーの声</h2>
-            <p class="text-lg max-w-2xl mx-auto mb-4">“ピッチコンテストで100万円をいただきました。” — スタートアップ創業者</p>
-            <p class="text-lg max-w-2xl mx-auto mb-8">“I cannot speak Japanese. But I could pitch in Japanese.” — 外国人起業家</p>
-            <p class="text-lg max-w-2xl mx-auto mb-8">“欠席者にも転送してもらえました。” — 営業担当者</p>
+        <section class="bg-secondary text-white py-5 text-center">
+            <h2 class="display-5 fw-semibold mb-4">ユーザーの声</h2>
+            <p class="lead mx-auto mb-3" style="max-width: 600px;">“ピッチコンテストで100万円をいただきました。” — スタートアップ創業者</p>
+            <p class="lead mx-auto mb-3" style="max-width: 600px;">“I cannot speak Japanese. But I could pitch in Japanese.” — 外国人起業家</p>
+            <p class="lead mx-auto mb-3" style="max-width: 600px;">“欠席者にも転送してもらえました。” — 営業担当者</p>
         </section>
 
-        <section class="bg-red-500 text-white py-12 text-center" id="lead-form">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6">無料トライアル</h2>
-            <form action="#" class="max-w-md mx-auto">
-                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 text-gray-700 rounded" required>
-                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 text-gray-700 rounded" required>
-                <button type="submit" class="bg-white text-red-500 px-6 py-3 rounded text-lg font-semibold hover:bg-gray-100">無料トライアルを申し込む</button>
+        <section class="bg-danger text-white py-5 text-center" id="lead-form">
+            <h2 class="display-5 fw-semibold mb-4">無料トライアル</h2>
+            <form action="#" class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control p-3" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" placeholder="Your Email" class="form-control p-3" required>
+                </div>
+                <button type="submit" class="btn btn-light text-danger btn-lg fw-semibold">無料トライアルを申し込む</button>
             </form>
         </section>
     </div>
 
-    <footer class="bg-gray-800 text-white text-center py-6">
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Clone Pitch. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
