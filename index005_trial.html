@@ -18,38 +18,22 @@
             padding: 20px;
         }
         .hero {
-            position: relative;
             text-align: center;
-            background-image: url('images/your-hero-image.jpg'); /* Replace with the actual path to your image */
+            background-image: url('images/your-hero-image.jpg');
             background-size: cover;
-            background-position: center;
             color: white;
-            padding: 450px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-            z-index: 1;
+            padding: 100px 20px;
         }
         .hero h1 {
-            position: relative;
-            z-index: 2;
-            font-size: 56px;
-            margin-bottom: 20px;
-            white-space: nowrap;
+            font-size: 48px;
+            margin-bottom: 220px;
+            margin-top: -80px; /* Move headline 60 points upward */
         }
-        .hero .cta {
-            position: relative;
-            z-index: 2;
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .cta {
             background-color: #ff6f61;
             color: white;
             padding: 15px 30px;
@@ -57,7 +41,6 @@
             font-size: 20px;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
         }
         .value-prop {
             text-align: center;
@@ -77,7 +60,6 @@
             display: flex;
             justify-content: space-around;
             padding: 50px 20px;
-            gap: 20px;
         }
         .benefits div {
             max-width: 300px;
@@ -155,8 +137,8 @@
 <body>
     <div class="container">
         <section class="hero">
-            <h1>クローンがプレゼン代行</h1>
-            <a href="#lead-form" class="cta">無料トライアル申し込み</a>
+            <h1>Let Your Clone Pitch on Your Behalf</h1>
+            <a href="#" class="cta">無料トライアル申し込み</a>
         </section>
 
         <section class="value-prop">
@@ -185,7 +167,7 @@
             <p>“I cannot speak Japanese. But I could pitch in Japanese.” — 外国人起業家</p>
         </section>
 
-        <section class="lead-form" id="lead-form">
+        <section class="lead-form">
             <h2>無料トライアル</h2>
             <form action="#">
                 <input type="text" name="url" placeholder="Your Presentation URL" required>
