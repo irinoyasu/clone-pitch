@@ -1,191 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Pitch - AI-Driven Investor Pitches</title>
+    <title>クローンに、プレゼン、代わってもらいましょう。</title>
     <style>
+        /* ここにCSSスタイルを追加 */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: sans-serif; /* 日本語フォントを指定 */
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .hero {
-            text-align: center;
-            background-image: url('images/your-hero-image.jpg');
+
+        .hero-image {
+            /* ヒーローイメージのスタイル */
+            background-image: url("path/to/your/hero-image.jpg"); /* ヒーローイメージのパスを指定 */
             background-size: cover;
+            background-position: center;
+            height: 500px; /* 適切な高さに調整 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white; /* テキストの色 */
+        }
+
+        .cta-button {
+            /* CTAボタンのスタイル */
+            background-color: #ff0000; /* 赤色 */
             color: white;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 24px;
-            margin-bottom: 40px;
-        }
-        .cta {
-            background-color: #ff6f61;
-            color: white;
-            padding: 15px 30px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
+            font-weight: bold;
             display: inline-block;
-        }
-        .value-prop {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .value-prop h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .value-prop p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-        }
-        .benefits {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-        }
-        .benefits div {
-            max-width: 300px;
-            text-align: center;
-        }
-        .benefits div h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .benefits div p {
-            font-size: 16px;
-        }
-        .social-proof {
-            background-color: #e8e8e8;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .social-proof h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .social-proof p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-        }
-        .lead-form {
-            background-color: #ff6f61;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .lead-form h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .lead-form form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .lead-form input {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 5px;
-        }
-        .lead-form button {
-            background-color: white;
-            color: #ff6f61;
-            padding: 15px 30px;
-            border: none;
-            font-size: 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .trust-indicators {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-            background-color: #f4f4f4;
-        }
-        .trust-indicators img {
-            max-width: 100px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <section class="hero">
-            <h1>Revolutionize Your Investor Pitches with AI-Driven Clone Technology</h1>
-            <p>Let an AI Clone Pitch on Your Behalf—Effortlessly Engage Investors Anytime, Anywhere.</p>
-            <a href="#" class="cta">Start Your Free Trial</a>
-        </section>
 
-        <section class="value-prop">
-            <h2>Clone Pitch: Your AI-Driven Presentation Partner</h2>
-            <p>Clone Pitch is the ultimate AI-driven tool that transforms your investor presentations. No more time-consuming preparations or language barriers—simply provide a minute of your voice, and our AI will handle the rest.</p>
-        </section>
-
-        <section class="benefits">
-            <div>
-                <h3>Save Time</h3>
-                <p>Let our AI clone handle investor pitches, freeing you up for more strategic tasks.</p>
-            </div>
-            <div>
-                <h3>Seamless Conversion</h3>
-                <p>Transform your existing slides into polished, multilingual videos with ease.</p>
-            </div>
-            <div>
-                <h3>Global Reach</h3>
-                <p>Ensure your message is clear and compelling, no matter the language.</p>
-            </div>
-        </section>
-
-        <section class="social-proof">
-            <h2>What Our Customers Say</h2>
-            <p>“Clone Pitch drastically reduced my preparation time, allowing me to focus on scaling my startup. The AI’s accuracy is astounding!” — Jane Doe, Founder of XYZ Startups</p>
-            <p>“Using Clone Pitch, we were able to secure our funding round with minimal effort. The AI presentation was flawless.” — John Smith, CEO of ABC Corp.</p>
-        </section>
-
-        <section class="lead-form">
-            <h2>Join Our Early Adopters</h2>
-            <form action="#">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="company" placeholder="Your Company Name" required>
-                <button type="submit">Request a Demo</button>
-            </form>
-        </section>
-
-        <section class="trust-indicators">
-            <img src="security-badge.png" alt="Security Badge">
-            <img src="gdpr-compliance.png" alt="GDPR Compliance">
-            <img src="trusted-by.png" alt="Trusted By">
-        </section>
+    <div class="hero-image">
+        <h1>クローンに、プレゼン、代わってもらいましょう。</h1>
+        <p>プレゼン、大変ですよね？</p>
+        <p>クローンが、代わりにやってくれます</p>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Clone Pitch. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h2>もう、プレゼンの準備に追われる必要はありません！</h2>
+        <ul>
+            <li>AIクローンがあなたの代わりにプレゼンをしてくれます。</li>
+            <li>あなたの声を完璧に再現したクローンボイスを作成します。</li>
+            <li>あなたスライドを魅力的な動画に変換します。</li>
+            <li>あなたのプレゼンをあらゆる言語に翻訳します。</li>
+            <li>あなたはたった1分の音声を提供するだけで、あとはプロのコーチングと編集サービスにお任せください。</li>
+        </ul>
+
+        <h2>従来のパワーポイントスライドとは違います！</h2>
+        <ul>
+            <li>あなたが特別な努力をする必要はありません。</li>
+            <li>プレゼンテーションスキルや語学力は必要ありません。</li>
+            <li>あなたのプレゼンを、本当に見てほしい人に届けます。</li>
+        </ul>
+
+        <p>「あ〜、プレゼン代わって欲しい・・・」</p>
+        <p>そんな風に思ったことはありませんか？</p>
+        <p><strong>Clone Pitch</strong> が、あなたの願いを叶えます。</p>
+
+        <a href="#" class="cta-button">今すぐ始めよう</a>
+
+        <h3>私たちを選ぶ理由</h3>
+        <ul>
+            <li><strong>投資家からの信頼獲得</strong>: 説得力のあるプレゼンテーションで、投資家の信頼を獲得し、資金調達を成功させます。</li>
+            <li><strong>時間とリソースの節約</strong>: プレゼンの準備にかかる時間と労力を大幅に削減し、本来の業務に集中できます。</li>
+            <li><strong>グローバル展開</strong>: 言語の壁を越えて、世界中の投資家にあなたのビジョンを伝えます。</li>
+        </ul>
+
+        <a href="#" class="cta-button">無料トライアル</a>
+
+        <p><strong>Clone Pitch</strong> は、あなたのビジネスを次のステージへと導きます。</p>
+
+        <blockquote>
+            <p>「Clone Pitchのおかげで、プレゼンの準備時間が大幅に短縮されました。投資家からの反応も上々です！」 - スタートアップ創業者</p>
+            <p>「英語でのプレゼンは苦手でしたが、Clone Pitchのおかげで自信を持って投資家とコミュニケーションが取れるようになりました。」 - 上場企業CEO</p>
+        </blockquote>
+
+        <p><strong>Clone Pitch</strong> - あなたのビジネスの可能性を広げます。</p>
+
+        <a href="#" class="cta-button">お問い合わせ</a>
+    </div>
+
 </body>
 </html>
