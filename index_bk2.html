@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Pitch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url('images/hero-image-800x600.png');
+            background-repeat: no-repeat;
+            background-size: contain; /* Ensure the full image is visible */
+            background-position: center;
+            width: 100%;
+            max-width: 800px; /* Set max width to image width */
+            height: 600px; /* Set height to image height */
+            margin: 0 auto; /* Center the image horizontally */
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <section class="hero-section d-flex flex-column align-items-center justify-content-center text-white text-center">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-4 fw-bold">クローンがプレゼン代行</h1>
+            <a href="https://tinyurl.com/2xuf2vkp" class="btn btn-danger btn-lg mt-4">無料デモを見る</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="text-center py-5">
+            <h2 class="display-5 fw-semibold mb-4">Clone Pitch</h2>
+            <p class="lead mx-auto mb-5" style="max-width: 600px;">プレゼンスライドを、クローンボイスで、プレゼン動画に。</p>
+        </section>
+
+        <section class="row text-center py-5">
+            <div class="col-md-4 mb-4">
+                <h3 class="h4 fw-bold mb-3">プレゼンに緊張しない</h3>
+                <p>何もしなくてもOK。<br>逆に聴衆を観察。<br>急な代打も心配なし。</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3 class="h4 fw-bold mb-3">英語もペラペラ</h3>
+                <p>噛まない。<br>時間ピッタリ。<br>10ヶ国語対応。</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3 class="h4 fw-bold mb-3">欠席者にも見てもらえる</h3>
+                <p>VIPにも簡単転送。<br>事前共有で出席者増。<br>熟慮したコメント増。</p>
+            </div>
+        </section>
+
+        <section class="bg-secondary text-white py-5 text-center">
+            <h2 class="display-5 fw-semibold mb-4">ユーザーの声</h2>
+            <p class="lead mx-auto mb-3" style="max-width: 600px;">“MITのピッチコンテストで100万円をいただきました。” <br>(スタートアップ創業者)</p>
+            <p class="lead mx-auto mb-3" style="max-width: 600px;">“I cannot speak Japanese. But I could pitch in Japanese.”<br>(外国人起業家)</p>
+            <p class="lead mx-auto mb-3" style="max-width: 600px;">“欠席した先方の社長に転送されて、受注できました。”<br>(営業担当者)</p>
+        </section>
+
+        <section class="bg-danger text-white py-5 text-center" id="lead-form">
+            <h2 class="display-5 fw-semibold mb-4">デモ</h2>
+            <form action="https://drive.google.com/file/d/15--_qcw5suke583OCDbU4eqlVjgywVqz/view" class="mx-auto" style="max-width: 500px;">
+                <button type="submit" class="btn btn-light text-danger btn-lg fw-semibold">無料デモを見る</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Clone Pitch. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
